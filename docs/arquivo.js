@@ -1,8 +1,8 @@
-import { palavraspy } from '../Bibliografia/disciplina_py.js';
-import { palavrasjs } from '../Bibliografia/disciplina.js';
-import { palavrascss } from '../Bibliografia/disciplina_css.js';
-import { palavrasart } from '../Bibliografia/disciplina_art.js';
-import { palavrashis } from '../Bibliografia/disciplina_hist.js';
+import { palavraspy } from './Bibliografia/disciplina_py.js';
+import { palavrasjs } from './Bibliografia/disciplina.js';
+import { palavrascss } from './Bibliografia/disciplina_css.js';
+import { palavrasart } from './Bibliografia/disciplina_art.js';
+import { palavrashis } from './Bibliografia/disciplina_hist.js';
 
 // 🎯 chamadas desorganizadas (organizar ainda)
 let trilho = document.getElementById("trilho");

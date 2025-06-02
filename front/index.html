@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Key</title>
+  <link rel="stylesheet" href="keyboard.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./Imagens/typewriter.png" type="png" />
+</head>
+
+<body>
+  <header>
+    <h1>Word Key <img id="keybord" src="./Imagens/typewriter.png" alt="typewriter" /></h1>
+  </header>
+
+  <section id="palavras_aleatorias">
+    <div id="aleatorias">
+      <p>escolha algum conteúdoao ao lado -></p>
+    </div>
+  </section>
+
+  <section id="key">
+    <div id="teclado">
+      <div class="linha1">
+        <button class="tecla esc" id="esc">Esc</button>
+        <button class="tecla numerica" id="tecla1">1</button>
+        <button class="tecla numerica" id="tecla2">2</button>
+        <button class="tecla numerica" id="tecla3">3</button>
+        <button class="tecla numerica" id="tecla4">4</button>
+        <button class="tecla numerica" id="tecla5">5</button>
+        <button class="tecla numerica" id="tecla6">6</button>
+        <button class="tecla numerica" id="tecla7">7</button>
+        <button class="tecla numerica" id="tecla8">8</button>
+        <button class="tecla numerica" id="tecla9">9</button>
+        <button class="tecla numerica" id="tecla0">0</button>
+        <button class="tecla" id="menos">-</button>
+        <button class="tecla" id="igual">=</button>
+        <button class="tecla backspace" id="backspace">Back</button>
+      </div>
+
+      <div class="linha2">
+        <button class="tecla tab" id="tab">Tab</button>
+        <button class="tecla" id="q">Q</button>
+        <button class="tecla" id="w">W</button>
+        <button class="tecla" id="e">E</button>
+        <button class="tecla" id="r">R</button>
+        <button class="tecla" id="t">T</button>
+        <button class="tecla" id="y">Y</button>
+        <button class="tecla" id="u">U</button>
+        <button class="tecla" id="i">I</button>
+        <button class="tecla" id="o">O</button>
+        <button class="tecla" id="p">P</button>
+        <button class="tecla" id="acento_agudo">´ `</button>
+        <button class="tecla" id="colchete-abre">[ {</button>
+        <button class="tecla barra" id="enter">
+          <div id="top-text">enter</div>
+        </button>
+      </div>
+
+      <div class="linha3">
+        <button class="tecla caps" id="caps">Caps</button>
+        <button class="tecla" id="a">A</button>
+        <button class="tecla" id="s">S</button>
+        <button class="tecla" id="d">D</button>
+        <button class="tecla" id="f">F <p>_</p></button>
+        <button class="tecla" id="g">G</button>
+        <button class="tecla" id="h">H</button>
+        <button class="tecla" id="j">J <p>_</p></button>
+        <button class="tecla" id="k">K</button>
+        <button class="tecla" id="l">L</button>
+        <button class="tecla" id="cedilha">ç</button>
+        <button class="tecla" id="tio">~ ^</button>
+        <button class="tecla enter" id="colchete-fecha">] }</button>
+      </div>
+
+      <div class="linha4">
+        <button class="tecla shift" id="shift-esq">Shift</button>
+        <button class="tecla" id="barra">\ |</button>
+        <button class="tecla" id="z">Z</button>
+        <button class="tecla" id="x">X</button>
+        <button class="tecla" id="c">C</button>
+        <button class="tecla" id="v">V</button>
+        <button class="tecla" id="b">B</button>
+        <button class="tecla" id="n">N</button>
+        <button class="tecla" id="m">M</button>
+        <button class="tecla" id="virgula">,</button>
+        <button class="tecla" id="ponto">.</button>
+        <button class="tecla" id="barra-final">/ ?</button>
+        <button class="tecla shift-right" id="shift-dir">Shift</button>
+      </div>
+
+      <div class="linha5">
+        <button class="tecla ctrl" id="ctrl-esq">Ctrl</button>
+        <button class="tecla" id="win">Win</button>
+        <button class="tecla" id="alt-esq">Alt</button>
+        <button class="tecla space" id="space">Space</button>
+        <button class="tecla" id="alt-dir">Alt</button>
+        <button class="tecla" id="fn">Fn</button>
+        <button class="tecla" id="ctrl-dir">Ctrl</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="trilho" id="trilho">
+    <div class="indicador"></div>
+  </div>
+  <img id="modos_telas" src="./Imagens/day-and-night (2).png" alt="modos">
+  <h2 id="coteudos">conteúdos</h2>
+  <div id="fundo"></div>
+  <nav id="opcao">
+    <button class="cbutton" id="opcao1">python</button>
+    <button class="cbutton" id="opcao2">javascript</button>
+    <button class="cbutton" id="opcao3">css</button>
+    <button class="cbutton" id="opcao4">artes</button>
+    <button class="cbutton" id="opcao5">história</button>
+  </nav>
+
+  <div id="optionkey">
+    <h2>Teclados</h2>
+    <div class="custom-options-container">
+      <button id="op1" class="custom-option" data-value="qwerty">QWERTY<div id="us" class="bandeira"></div></button>
+      <button id="op2" class="custom-option" data-value="abnt2">ABNT2<div id="br" class="bandeira"></div></button>
+      <button id="op3" class="custom-option" data-value="azerty">AZERTY<div id="fr" class="bandeira"></div></button>
+      <button id="op4" class="custom-option" data-value="qwertz">QWERTZ<div id="de" class="bandeira"></div></button>
+      <button id="op5" class="custom-option" data-value="dvorak">DVORAK<div id="us" class="bandeira"></div></button>
+      <button id="op6" class="custom-option" data-value="colemak">COLEMAK<div id="us" class="bandeira"></div></button>
+    </div>
+  </div>
+
+  <a id="github" target="_blank" rel="external" href="https://github.com/DiegoZaluski">github</a>
+
+  <script type="module" src="arquivo.js"></script>
+</body>
+
+</html>
