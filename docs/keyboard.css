@@ -20,12 +20,17 @@
     position: relative;
     width: 44px;
     height: 43px;
-    font-size: 20px;
+    font-size: 19px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-family: cursive;
+    font-family:sans-serif;
+    border: 1px solid #a9b3ce;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    padding: 5px;
 }
 
 /* Estilos específicos para teclas */
@@ -95,7 +100,6 @@
     width: 45px;
     height: 50px;
     background-color: rgb(243, 243, 135);
-    box-shadow: 2px 2px 5px;
     border-radius: 7px;
 }
 
@@ -153,13 +157,15 @@
     width: 73px;
     height: 100px;
     font-family: monospace;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%,
-            30% 100%, 30% 50%, 0% 50%);
+    clip-path: polygon(
+    0% 0%,100% 0%, 100% 100%,
+    30% 100%, 30% 50%, 0% 50%);
     background-color: rgb(255, 255, 164);
-
+    font-size: 40px;
+    display: flex;
+    justify-content: center; 
+    justify-content: flex-end;
+    padding: 12px;
 }
 
 #top-text {
@@ -214,7 +220,6 @@
     width: 45px;
     height: 50px;
     background-color: pink;
-    box-shadow: 2px 2px 5px;
     border-radius: 7px;
 }
 

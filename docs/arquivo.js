@@ -546,7 +546,7 @@ function aplicarLayout(layout) {
     keyContainer.classList.remove('azerty', 'qwertz', 'dvorak', 'colemak', 'abnt2');
   }
 
-  btnEnter.textContent = '⏎';
+  btnEnter.textContent = ' ';
   eltTopText.textContent = 'enter';
   btnEnter.classList.remove('azerty', 'qwertz', 'dvorak', 'colemak', 'abnt2');
   eltTopText.classList.remove('azerty', 'qwertz', 'dvorak', 'colemak', 'abnt2');
