@@ -1,0 +1,535 @@
+/* Teclado */
+#teclado {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: center;
+}
+
+.linha1,
+.linha2,
+.linha3,
+.linha4,
+.linha5 {
+    display: flex;
+    gap: 0px;
+}
+
+/* Estilos das teclas */
+.tecla {
+    position: relative;
+    width: 44px;
+    height: 43px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+/* Estilos específicos para teclas */
+.esc {
+    width: 45px;
+    height: 50px;
+}
+
+.tab {
+    width: 63px;
+}
+
+.caps {
+    width: 87px;
+    height: 50px;
+}
+
+#shift-esq {
+    height: 50px;
+    width: 69px;
+}
+
+.shift,
+.shift-right {
+    width: 112px;
+    height: 50px;
+}
+
+.ctrl {
+    height: 50px;
+    width: 70px;
+}
+
+#ctrl-dir {
+    height: 50px;
+    width: 69px;
+}
+
+.space {
+    width: 200px;
+}
+
+/* Linha 1 */
+.linha1 {
+    position: relative;
+    top: 13px;
+}
+
+/* Linha 2 */
+.linha2 {
+    position: relative;
+    right: 0px;
+    top: 4px;
+}
+
+#tab {
+    height: 50px;
+    width: 67px;
+}
+
+#q {
+    width: 45px;
+    height: 50px;
+}
+
+#w {
+    width: 45px;
+    height: 50px;
+    background-color: rgb(243, 243, 135);
+    box-shadow: 2px 2px 5px;
+    border-radius: 7px;
+}
+
+#e {
+    width: 45px;
+    height: 50px;
+}
+
+#r {
+    width: 45px;
+    height: 50px;
+}
+
+#t {
+    width: 45px;
+    height: 50px;
+}
+
+#y {
+    width: 45px;
+    height: 50px;
+}
+
+#u {
+    width: 45px;
+    height: 50px;
+}
+
+#i {
+    width: 45px;
+    height: 50px;
+}
+
+#o {
+    width: 45px;
+    height: 50px;
+}
+
+#p {
+    width: 45px;
+    height: 50px;
+}
+
+#acento_agudo {
+    width: 45px;
+    height: 50px;
+}
+
+#colchete-abre {
+    width: 45px;
+    height: 50px;
+}
+
+#enter {
+    width: 73px;
+    height: 100px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%,
+            30% 100%, 30% 50%, 0% 50%);
+    background-color: rgb(255, 255, 164);
+
+}
+
+#top-text {
+    margin-top: -40px;
+}
+
+.linha3 {
+    position: relative;
+    top: -55px;
+    right: 26px;
+}
+
+#a {
+    width: 45px;
+    height: 50px;
+    background-color: rgb(243, 243, 135);
+    border-radius: 7px;
+}
+
+#s {
+    width: 45px;
+    height: 50px;
+    background-color: rgb(243, 243, 135);
+    border-radius: 7px;
+}
+
+#d {
+    width: 45px;
+    height: 50px;
+    background-color: rgb(243, 243, 135);
+    border-radius: 7px;
+}
+
+#f {
+    width: 45px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 7px;
+}
+
+#g {
+    width: 45px;
+    height: 50px;
+}
+
+#h {
+    width: 45px;
+    height: 50px;
+}
+
+#j {
+    width: 45px;
+    height: 50px;
+    background-color: pink;
+    box-shadow: 2px 2px 5px;
+    border-radius: 7px;
+}
+
+#k {
+    width: 45px;
+    height: 50px;
+}
+
+#l {
+    width: 45px;
+    height: 50px;
+}
+
+#cedilha {
+    width: 45px;
+    height: 50px;
+}
+
+#tio {
+    width: 45px;
+    height: 50px;
+}
+
+#colchete-fecha {
+    width: 46px;
+    height: 50px;
+}
+
+/* Linha 4 */
+.linha4 {
+    position: relative;
+    top: -64px;
+    right: 0px;
+}
+
+#z {
+    width: 45px;
+    height: 50px;
+}
+
+#x {
+    width: 45px;
+    height: 50px;
+}
+
+#c {
+    width: 45px;
+    height: 50px;
+}
+
+#v {
+    width: 45px;
+    height: 50px;
+}
+
+#b {
+    width: 45px;
+    height: 50px;
+}
+
+#n {
+    width: 47px;
+    height: 50px;
+}
+
+#m {
+    width: 47px;
+    height: 50px;
+}
+
+#virgula {
+    width: 47px;
+    height: 50px;
+}
+
+#ponto {
+    width: 45px;
+    height: 50px;
+}
+
+#barra-final {
+    width: 45px;
+    height: 50px;
+}
+
+#barra {
+    width: 43px;
+    height: 50px;
+}
+
+/* Linha 5 */
+.linha5 {
+    position: relative;
+    right: -0px;
+    top: -73px;
+}
+
+#win {
+    width: 47px;
+    height: 50px;
+}
+
+#alt-esq {
+    width: 47px;
+    height: 50px;
+}
+
+#space {
+    width: 353px;
+    height: 50px;
+    background-color: rgb(243, 243, 151);
+}
+
+#alt-dir {
+    width: 47px;
+    height: 50px;
+}
+
+#fn {
+    width: 47px;
+    height: 50px;
+}
+
+#tecla1 {
+    width: 45px;
+    height: 50px;
+}
+
+#tecla2 {
+    width: 45px;
+    height: 50px;
+}
+
+#tecla3 {
+    width: 45px;
+    height: 50px;
+}
+
+#tecla4 {
+    width: 45px;
+    height: 50px;
+}
+
+#tecla5 {
+    width: 45px;
+    height: 50px;
+}
+
+#tecla6 {
+    width: 45px;
+    height: 50px;
+}
+
+#tecla7 {
+    width: 45px;
+    height: 50px;
+}
+
+#tecla8 {
+    width: 45px;
+    height: 50px;
+}
+
+#tecla9 {
+    width: 45px;
+    height: 50px;
+}
+
+#tecla0 {
+    width: 45px;
+    height: 50px;
+}
+
+#menos {
+    width: 45px;
+    height: 50px;
+}
+
+#igual {
+    width: 45px;
+    height: 50px;
+}
+
+#backspace {
+    height: 50px;
+    width: 95px;
+}
+
+.tecla:hover {
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.tecla:active {
+    background-color: #999;
+}
+
+#ctrl-dir {
+    background-color: rgb(243, 151, 151);
+    border-radius: 5px;
+}
+
+#fn {
+    background-color: rgb(243, 151, 151);
+    border-radius: 5px;
+}
+
+#alt-dir {
+    background-color: rgb(243, 151, 151);
+    border-radius: 5px;
+}
+
+#shift-dir {
+    background-color: rgb(243, 151, 151);
+    border-radius: 5px;
+}
+
+#caps {
+    background-color: rgb(243, 151, 151);
+    border-radius: 5px;
+}
+
+#win {
+    background-color: rgb(243, 151, 151);
+    border-radius: 5px;
+}
+
+.numerica {
+    background-color: rgb(243, 151, 151);
+    border-radius: 5px;
+}
+
+/* corzinha */
+.tecla.ativa {
+    background-color: #a9b3ce;
+    /* verde limão do sucesso */
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #a9b3ce;
+}
+
+/* keybords dinamicos */
+#enter.azerty {
+    font-size: 35px;
+    clip-path: var(--my-clip);
+    transition: clip-path .3s;
+    height: 49px;
+    border-radius: 7px;
+}
+
+.linha3.azerty {
+    top: -5px;
+    left: 0px;
+}
+
+.linha4.azerty {
+    top: -14px;
+}
+
+.linha5.azerty {
+    top: -23px;
+}
+
+#colchete-fecha.azerty {
+    width: 98px;
+}
+
+/*dvorak*/
+#enter.dvorak {
+    font-size: 35px;
+    clip-path: var(--my-clip);
+    transition: clip-path .3s;
+    height: 49px;
+    border-radius: 7px;
+}
+
+.linha3.dvorak {
+    top: -5px;
+    left: 0px;
+}
+
+.linha4.dvorak {
+    top: -14px;
+}
+
+.linha5.dvorak {
+    top: -23px;
+}
+
+#colchete-fecha.dvorak {
+    width: 98px;
+}
+
+/* colemak */
+#enter.colemak {
+    font-size: 35px;
+    clip-path: var(--my-clip);
+    transition: clip-path .3s;
+    height: 49px;
+    border-radius: 7px;
+}
+
+.linha3.colemak {
+    top: -5px;
+    left: 0px;
+}
+
+.linha4.colemak {
+    top: -14px;
+}
+
+.linha5.colemak {
+    top: -23px;
+}
+
+#colchete-fecha.colemak {
+    width: 98px;
+}
