@@ -141,7 +141,7 @@ function novaPalavra() {
   indexLetra = 0;
   letrasDigitadas = [];
   const palavraElemento = document.getElementById("aleatorias");
-  palavraElemento.innerHTML = palavraAtual
+  palavraElemento.innerHTML = palavraAtual  // aqui foi mudado 
     .split("")
     .map((letra, index) => `<span id="letra-${index}">${letra}</span>`)
     .join("");
@@ -565,12 +565,12 @@ function aplicarLayout(layout) {
   }
 
   if (layout === 'azerty') {
-    btnEnter.textContent = '*';
+    btnEnter.textContent = '';
     eltTopText.textContent = 'enter';
     btnEnter.classList.add('azerty');
     eltTopText.classList.add('azerty');
   } else if (layout === 'dvorak') {
-    btnEnter.textContent = '⏎';
+    btnEnter.textContent = '';
     eltTopText.textContent = 'Enter';
     btnEnter.classList.add('dvorak');
     eltTopText.classList.add('dvorak');
@@ -741,4 +741,3 @@ document.addEventListener('DOMContentLoaded', () => {
     btnTio.textContent = "' \"";
   }
 });
-

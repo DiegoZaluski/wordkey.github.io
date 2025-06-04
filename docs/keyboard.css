@@ -1,4 +1,5 @@
 /* Teclado */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 #teclado {
     display: flex;
     flex-direction: column;
@@ -17,6 +18,7 @@
 
 /* Estilos das teclas */
 .tecla {
+    color: #A9B3CE;
     position: relative;
     width: 44px;
     height: 43px;
@@ -25,7 +27,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-family:sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     border: 1px solid #a9b3ce;
     display: flex;
     justify-content: center; 
