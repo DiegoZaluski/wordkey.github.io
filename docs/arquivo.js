@@ -5,6 +5,7 @@ import { palavrasart } from './Bibliografia/disciplina_art.js';
 import { palavrashis } from './Bibliografia/disciplina_hist.js';
 
 // 🎯 chamadas desorganizadas (organizar ainda)
+const teclas = document.querySelectorAll(".tecla");
 let trilho = document.getElementById("trilho");
 let body = document.querySelector('body');
 let section = document.querySelector('section');
@@ -55,6 +56,10 @@ trilho.addEventListener('click', () => {
   op5.classList.toggle('dark');
   op6.classList.toggle('dark');
   optionkey.classList.toggle('dark');
+
+  teclas.forEach(x=>{
+    x.classList.toggle('dark');
+  })
 });
 
 //_______________________________________________________________________________________//
@@ -149,7 +154,6 @@ function novaPalavra() {
 }
 
 function resetTeclas() {
-  const teclas = document.querySelectorAll(".tecla");
   teclas.forEach(tecla => {
     tecla.classList.remove("correta", "errada", "ativa");
     tecla.style.backgroundColor = '';
@@ -221,9 +225,6 @@ for (let button of buttons) {
 //_______________________________________________________________________________________//
 
 //🎯keybords dinamicos
-
-const teclas = document.querySelectorAll('.tecla');
-
 function acenderTecla(codigo) {
   const tecla = document.getElementById(codigo.toLowerCase());
 

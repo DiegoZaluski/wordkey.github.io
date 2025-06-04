@@ -34,6 +34,12 @@
     align-items: flex-start;
     padding: 5px;
 }
+.dark .tecla {
+    color: #02182F;
+    border: 1px solid #02182F ;
+    
+
+}
 
 /* Estilos específicos para teclas */
 .esc {
