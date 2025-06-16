@@ -6,11 +6,9 @@ import { palavrashis } from './Bibliografia/disciplina_hist.js';
 
 // 🎯 chamadas desorganizadas (organizar ainda)
 const teclas = document.querySelectorAll(".tecla");
-let trilho = document.getElementById("trilho");
-let body = document.querySelector('body');
+const trilho = document.getElementById("trilho");
+const body = document.querySelector('body');
 let section = document.querySelector('section');
-let footer = document.querySelector('footer');
-let indicador = document.getElementById("modo");
 let coteudos = document.getElementById('coteudos');
 let key = document.getElementById('key');
 let randomwords = document.getElementById('palavras_aleatorias');
@@ -31,21 +29,64 @@ let teclado = document.getElementById('teclado');
 //_______________________________________________________________________________________//
 
 // 🎯 Modo Claro e Escuro
+function saved_theme() {
+  const theme = localStorage.getItem('theme');
+  if (theme === 'dark') {
+    [
+    trilho,
+    body,
+    section,
+    key,
+    opcao,
+    coteudos,
+    op1,
+    op2,
+    op3,
+    op4,
+    op5,
+    op6,
+    optionkey
+  ].forEach(e=>{
+    e.classList.add('dark');
+  for (let b of cbutton) {
+  b.classList.add('dark');
+  };
+  });
+    
+    
+  }
+  else {
+        [
+    trilho,
+    body,
+    section,
+    key,
+    opcao,
+    coteudos,
+    op1,
+    op2,
+    op3,
+    op4,
+    op5,
+    op6,
+    optionkey
+  ].forEach(e=>{
+    e.classList.remove('dark');
+  });
+   for (let b of cbutton) {
+  b.classList.remove('dark');
+  };
+  }
+}
+
 trilho.addEventListener('click', () => {
   trilho.classList.toggle('dark');
   body.classList.toggle('dark');
   section.classList.toggle('dark');
   key.classList.toggle('dark');
-  footer.classList.toggle('dark');
-  indicador.classList.toggle('dark');
   opcao.classList.toggle('dark');
   for (let b of cbutton) {
     b.classList.toggle('dark');
-  }
-  if (body.classList.contains('dark')) {
-    indicador.src = 'imagens/astronaut.png';
-  } else {
-    indicador.src = 'imagens/sun.png';
   }
 
   coteudos.classList.toggle('dark');
@@ -57,11 +98,18 @@ trilho.addEventListener('click', () => {
   op6.classList.toggle('dark');
   optionkey.classList.toggle('dark');
 
-  teclas.forEach(x=>{
+  teclas.forEach(x => {
     x.classList.toggle('dark');
-  })
-});
+  });
 
+  if (body.classList.contains('dark')) {
+    localStorage.setItem('theme', 'dark');
+  }
+  else {
+    localStorage.setItem('theme', 'light');
+  }
+});
+saved_theme();
 //_______________________________________________________________________________________//
 
 // 🎯 DRAG AND DROP DO TECLADO
@@ -742,3 +790,4 @@ document.addEventListener('DOMContentLoaded', () => {
     btnTio.textContent = "' \"";
   }
 });
+

@@ -5,6 +5,14 @@
     flex-direction: column;
     gap: 9px;
     align-items: center;
+    height: 280px;
+    pointer-events: none;
+    position: absolute;
+    left: 8px;
+    top: -4px;
+
+   
+
 }
 
 .linha1,
@@ -323,6 +331,7 @@
     position: relative;
     right: -0px;
     top: -73px;
+    
 }
 
 #win {
@@ -545,4 +554,494 @@
 
 #colchete-fecha.colemak {
     width: 98px;
+}
+
+@media (max-width: 1440px) and (max-height: 805px) {
+    #teclado {
+    display: flex;
+    flex-direction: column;
+    gap: 6.75px;
+    align-items: center;
+    height: 210px;
+    pointer-events: none;
+    position: absolute;
+    top: -3px;
+    left: 6px;
+    
+}
+
+.linha1,
+.linha2,
+.linha3,
+.linha4,
+.linha5 {
+    display: flex;
+    gap: 0px;
+}
+
+.tecla {
+    color: #A9B3CE;
+    position: relative;
+    width: 33px;
+    height: 32.25px;
+    font-size: 14.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Roboto Condensed", sans-serif;
+    border: 0.75px solid #a9b3ce;
+    padding: 3.75px;
+    align-items: flex-start;
+}
+
+.dark .tecla {
+    color: #02182F;
+    border: 0.75px solid #02182F;
+}
+
+.esc {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+.tab {
+    width: 47.25px;
+}
+
+.caps {
+    width: 65.25px;
+    height: 37.5px;
+}
+
+#shift-esq {
+    height: 37.5px;
+    width: 51.75px;
+}
+
+.shift,
+.shift-right {
+    width: 84px;
+    height: 37.5px;
+}
+
+.ctrl {
+    height: 37.5px;
+    width: 52.5px;
+}
+
+#ctrl-dir {
+    height: 37.5px;
+    width: 51.75px;
+}
+
+.space {
+    width: 150px;
+}
+
+.linha1 {
+    position: relative;
+    top: 9.75px;
+}
+
+.linha2 {
+    position: relative;
+    right: 0px;
+    top: 3px;
+}
+
+#tab {
+    height: 37.5px;
+    width: 50.25px;
+}
+
+#q {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#w {
+    width: 33.75px;
+    height: 37.5px;
+    background-color: rgb(243, 243, 135);
+    border-radius: 5.25px;
+}
+
+#e {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#r {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#t {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#y {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#u {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#i {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#o {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#p {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#acento_agudo {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#colchete-abre {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#enter {
+    width: 54.75px;
+    height: 75px;
+    font-family: monospace;
+    clip-path: polygon(
+        0% 0%, 100% 0%, 100% 100%,
+        30% 100%, 30% 50%, 0% 50%
+    );
+    background-color: rgb(255, 255, 164);
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 9px;
+}
+
+#top-text {
+    margin-top: -30px;
+}
+
+.linha3 {
+    position: relative;
+    top: -41.25px;
+    right: 19.5px;
+}
+
+#a {
+    width: 33.75px;
+    height: 37.5px;
+    background-color: rgb(243, 243, 135);
+    border-radius: 5.25px;
+}
+
+#s {
+    width: 33.75px;
+    height: 37.5px;
+    background-color: rgb(243, 243, 135);
+    border-radius: 5.25px;
+}
+
+#d {
+    width: 33.75px;
+    height: 37.5px;
+    background-color: rgb(243, 243, 135);
+    border-radius: 5.25px;
+}
+
+#f {
+    width: 33.75px;
+    height: 37.5px;
+    background-color: pink;
+    border-radius: 5.25px;
+}
+
+#g {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#h {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#j {
+    width: 33.75px;
+    height: 37.5px;
+    background-color: pink;
+    border-radius: 5.25px;
+}
+
+#k {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#l {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#cedilha {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#tio {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#colchete-fecha {
+    width: 34.5px;
+    height: 37.5px;
+}
+
+.linha4 {
+    position: relative;
+    top: -48px;
+    right: 0px;
+}
+
+#z {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#x {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#c {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#v {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#b {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#n {
+    width: 35.25px;
+    height: 37.5px;
+}
+
+#m {
+    width: 35.25px;
+    height: 37.5px;
+}
+
+#virgula {
+    width: 35.25px;
+    height: 37.5px;
+}
+
+#ponto {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#barra-final {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#barra {
+    width: 32.25px;
+    height: 37.5px;
+}
+
+.linha5 {
+    position: relative;
+    right: -0px;
+    top: -54.75px;
+    
+}
+
+#win {
+    width: 35.25px;
+    height: 37.5px;
+}
+
+#alt-esq {
+    width: 35.25px;
+    height: 37.5px;
+}
+
+#space {
+    width: 264.75px;
+    height: 37.5px;
+    background-color: rgb(243, 243, 151);
+}
+
+#alt-dir {
+    width: 35.25px;
+    height: 37.5px;
+}
+
+#fn {
+    width: 35.25px;
+    height: 37.5px;
+}
+
+#tecla1 {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#tecla2 {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#tecla3 {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#tecla4 {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#tecla5 {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#tecla6 {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#tecla7 {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#tecla8 {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#tecla9 {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#tecla0 {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#menos {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#igual {
+    width: 33.75px;
+    height: 37.5px;
+}
+
+#backspace {
+    height: 37.5px;
+    width: 71.25px;
+}
+#enter.azerty {
+    font-size: 26.25px;
+    clip-path: var(--my-clip);
+    transition: clip-path .3s;
+    height: 36.75px;
+    border-radius: 5.25px;
+}
+
+.linha3.azerty {
+    top: -3.75px;
+    left: 0px;
+}
+
+.linha4.azerty {
+    top: -10.5px;
+}
+
+.linha5.azerty {
+    top: -17.25px;
+}
+
+#colchete-fecha.azerty {
+    width: 73.5px;
+}
+
+#enter.dvorak {
+    font-size: 26.25px;
+    clip-path: var(--my-clip);
+    transition: clip-path .3s;
+    height: 36.75px;
+    border-radius: 5.25px;
+}
+
+.linha3.dvorak {
+    top: -3.75px;
+    left: 0px;
+}
+
+.linha4.dvorak {
+    top: -10.5px;
+}
+
+.linha5.dvorak {
+    top: -17.25px;
+}
+
+#colchete-fecha.dvorak {
+    width: 73.5px;
+}
+
+#enter.colemak {
+    font-size: 26.25px;
+    clip-path: var(--my-clip);
+    transition: clip-path .3s;
+    height: 36.75px;
+    border-radius: 5.25px;
+}
+
+.linha3.colemak {
+    top: -3.75px;
+    left: 0px;
+}
+
+.linha4.colemak {
+    top: -10.5px;
+}
+
+.linha5.colemak {
+    top: -17.25px;
+}
+
+#colchete-fecha.colemak {
+    width: 73.5px;
+}
 }

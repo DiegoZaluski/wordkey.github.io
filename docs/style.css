@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body.dark {
@@ -15,23 +16,17 @@ body {
     padding: 0%;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #3d405b;
     transition: .5s;
-}
-#caixa_modo{
-    position: relative;
-    width: 100px;
-    height: 70px;
-    top: -45vh;
-    left: 41vw;
+    
+    
 }
 .trilho {
-    left:25%;
+    left:88%;
     top: 5%;
     width: 55px;
     height: 25px;
@@ -40,6 +35,7 @@ body {
     border-radius: 150px;
     cursor: pointer;
     z-index: 999;
+    place-self: center;
 }
 
 .trilho .indicador {
@@ -62,16 +58,6 @@ body {
     background-color: #fff;
 }
 
-#modos_telas {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 47%;
-    left: 37%;
-    z-index: 999;
-    transition: 0.5s;
-
-}
 
 .dark #modos_telas {
     left: 3000px;
@@ -106,6 +92,10 @@ header {
     padding: 15px;
     border-radius: 10px;
     color: white;
+    place-items: center;
+    justify-self: center; 
+    align-self: center;    
+    place-self: center;
 
 
 }
@@ -120,18 +110,22 @@ header {
     font-family: cursive;
     position: fixed;
     top: 42.8vh;
-    width: 725px;
-    height: 305px;
+    width: 699px;
+    height: 270px;
     text-align: center;
     background-color: #a9b3ce;
     padding: 15px;
-    border-radius: 10px;
     color: white;
     z-index: 999;
+    border: 1px solid rgb(0, 0, 0);
+    grid-column: 2;
+    grid-row: 2;   
+    place-self: center;
 }
 
 .dark#key {
     background-color: #02182f;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 #keybord {
@@ -155,6 +149,8 @@ nav {
     row-gap: 1px;
     justify-items: stretch;
     border-radius: 30px;
+    margin: 0.1vh;
+    
 }
 
 .dark#opcao {
@@ -180,7 +176,7 @@ nav {
 
 #coteudos {
     position: absolute;
-    left: 88.9vw;
+    left: 88.95vw;
     top: 21.4vh;
     font-family: initial;
     font-size: 30px;
@@ -188,23 +184,11 @@ nav {
     background-color: #a9b3ce;
     width: 190px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0px 10px;
     padding: 5px;
-    z-index: 999;
+    box-shadow: -10px -10px 0px;
 }
 
-#fundo {
-    position: fixed;
-    left: 88vw;
-    top: 20vh;
-    color: #ffffff;
-    background-color: #ffffff;
-    width: 190px;
-    height: 45px;
-    text-align: center;
-    border-radius: 8px;
-    padding: 5px;
-}
 
 #coteudos.dark {
     background-color: #8f9ece;
@@ -213,8 +197,8 @@ nav {
 /* opção de keys bords */
 #optionkey {
     position: absolute;
-    left: 91vw;
-    top: 52.9vh;;
+    left: 91.02vw;
+    top: 53.1vh;;
     text-align: center;
     font-family: initial;
     font-size: 20px;
@@ -222,6 +206,12 @@ nav {
     background-color: #a9b3ce;
     width: 150px;
     cursor: pointer;
+    margin-top:1px;
+   
+    
+}
+#optionkey:hover{
+    background-color: #abbcea;
 }
 
 .custom-option {
@@ -243,6 +233,7 @@ nav {
     grid-template-columns: 1fr;
     cursor: pointer;
     border: 1px solid #c8d3f4 ;
+    
 }
 
 .custom-option.dark {
@@ -365,12 +356,15 @@ nav {
 
 a#github {
     position: fixed;
-    top: 77vh;
+    top: 74vh;
     text-decoration: none;
     color: white;
     font-family: sans-serif;
     font-size: 20px;
-
+    place-self: center;
+}
+a#github:hover{
+    color: rgb(243, 243, 135);
 }
 
 #keybord {
@@ -392,9 +386,10 @@ a#github {
         transform: scale(0.75);
     }
 
-    #optionkey {
-        top: 51.9vh;
-    }
+#optionkey{
+    top:52vh;
+    left: 91.05vw;
+}
 
 }
 
@@ -408,6 +403,14 @@ a#github {
         width: 310px;
         transform: scale(0.75);
     }
+   #coteudos{ 
+        left: 88.8vw;
+        top: 21.4vh;
+    }
+   #optionkey {
+        top:52.03vh;
+    }
+    
 }
 
 
@@ -428,20 +431,19 @@ a#github {
     }
 
     #optionkey {
-    left: 90vw;
-    top: 52.6vh;
+    left: 90.1vw;
+    top:52.8vh;
+    
+    
 
     }
 
     #coteudos {
     left: 87.7vw;
-      
+    top:21.5vh
+
     }
 
-    #fundo {
-    left: 86.7vw;
-    
-    }
 }
 
 /* Para telas com largura máxima de 1600px */
@@ -456,34 +458,22 @@ a#github {
         transform: scale(0.8);
     }
 
-    #palavras_aleatorias {
-
-    }
-
-    #keybord {
-
-    }
-
     nav {
     top: 27.2vh;
     left: 89vw;
     }
 
     #optionkey {
-    left: 89vw;
-    top: 58.6vh;
+    left: 89.1vw;
+    top:58.7vh;
       
     }
 
     #coteudos {
-        left: 86.5vw;
+        left: 86.55vw;
 
     }
 
-    #fundo {
-        left: 85.5vw;
-
-    }
 
     a#github {
         top: 720px;
@@ -510,33 +500,9 @@ a#github {
         margin-bottom: 10px;
     }
 
-    footer {
-        position: relative;
-        margin-top: 20px;
-        margin: auto;
-    }
 
     #palavras_aleatorias {
         width: 800px;
-
-    }
-
-    #key {
-        
-
-    }
-
-    nav {
-
-
-    }
-
-    #optionkey {
-     
-
-    }
-
-    .custom-option {
 
     }
 
@@ -548,16 +514,26 @@ a#github {
     }
 
     #coteudos {
-    left: 86.2vw;
+    left: 85.5vw;
    
     }
-
-    #fundo {
-    left: 85.2vw;
-
+    nav{
+        left: 88.26vw;
+    }
+    #optionkey{
+        left: 88.31vw;
     }
 
+    .custom-option{
+        height:45px;
+        font-size: 15px;
+    }
     a#github {
-        top: 84vh;
+        top: 75vh;
+    }
+    #key{
+        width: 524px;
+        height: 202px;
+        top: 46vh;
     }
 }
