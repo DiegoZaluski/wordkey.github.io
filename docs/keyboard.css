@@ -10,11 +10,13 @@
     position: absolute;
     left: 8px;
     top: -4px;
-
-   
-
 }
-
+:root{
+    --color00:rgb(243, 243, 135);
+    --color01:#02182F;
+    --color02:pink;
+    --color03:rgb(243, 151, 151);
+}
 .linha1,
 .linha2,
 .linha3,
@@ -43,8 +45,8 @@
     padding: 5px;
 }
 .dark .tecla {
-    color: #02182F;
-    border: 1px solid #02182F ;
+    color: var(--color01);
+    border: 1px solid var(--color01);
     
 
 }
@@ -115,7 +117,7 @@
 #w {
     width: 45px;
     height: 50px;
-    background-color: rgb(243, 243, 135);
+    background-color: var(--color00);
     border-radius: 7px;
 }
 
@@ -176,7 +178,7 @@
     clip-path: polygon(
     0% 0%,100% 0%, 100% 100%,
     30% 100%, 30% 50%, 0% 50%);
-    background-color: rgb(255, 255, 164);
+    background-color: var(--color00);
     font-size: 40px;
     display: flex;
     justify-content: center; 
@@ -197,28 +199,28 @@
 #a {
     width: 45px;
     height: 50px;
-    background-color: rgb(243, 243, 135);
+    background-color: var(--color00);
     border-radius: 7px;
 }
 
 #s {
     width: 45px;
     height: 50px;
-    background-color: rgb(243, 243, 135);
+    background-color: var(--color00);
     border-radius: 7px;
 }
 
 #d {
     width: 45px;
     height: 50px;
-    background-color: rgb(243, 243, 135);
+    background-color: var(--color00);
     border-radius: 7px;
 }
 
 #f {
     width: 45px;
     height: 50px;
-    background-color: pink;
+    background-color: var(--color02);
     border-radius: 7px;
 }
 
@@ -235,7 +237,7 @@
 #j {
     width: 45px;
     height: 50px;
-    background-color: pink;
+    background-color: var(--color02);
     border-radius: 7px;
 }
 
@@ -435,49 +437,39 @@
 }
 
 #ctrl-dir {
-    background-color: rgb(243, 151, 151);
+    background-color: var(--color03);
     border-radius: 5px;
 }
 
 #fn {
-    background-color: rgb(243, 151, 151);
+    background-color: var(--color03);
     border-radius: 5px;
 }
 
 #alt-dir {
-    background-color: rgb(243, 151, 151);
+    background-color: var(--color03);
     border-radius: 5px;
 }
 
 #shift-dir {
-    background-color: rgb(243, 151, 151);
+    background-color: var(--color03);
     border-radius: 5px;
 }
 
 #caps {
-    background-color: rgb(243, 151, 151);
+    background-color: var(--color03);
     border-radius: 5px;
 }
 
 #win {
-    background-color: rgb(243, 151, 151);
+    background-color: var(--color03);
     border-radius: 5px;
 }
 
 .numerica {
-    background-color: rgb(243, 151, 151);
+    background-color: var(--color03);
     border-radius: 5px;
 }
-
-/* corzinha */
-.tecla.ativa {
-    background-color: #a9b3ce;
-    /* verde limão do sucesso */
-    color: white;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #a9b3ce;
-}
-
 /* keybords dinamicos */
 #enter.azerty {
     font-size: 35px;
@@ -556,7 +548,7 @@
     width: 98px;
 }
 
-@media (max-width: 1440px) and (max-height: 805px) {
+@media (max-width: 1440px){
     #teclado {
     display: flex;
     flex-direction: column;
@@ -565,7 +557,7 @@
     height: 210px;
     pointer-events: none;
     position: absolute;
-    top: -3px;
+    top: -4px;
     left: 6px;
     
 }
@@ -596,8 +588,8 @@
 }
 
 .dark .tecla {
-    color: #02182F;
-    border: 0.75px solid #02182F;
+    color: var(--color01);
+    border: 0.75px solid var(--color01);
 }
 
 .esc {
@@ -663,7 +655,7 @@
 #w {
     width: 33.75px;
     height: 37.5px;
-    background-color: rgb(243, 243, 135);
+    background-color: var(--color00);
     border-radius: 5.25px;
 }
 
@@ -725,7 +717,7 @@
         0% 0%, 100% 0%, 100% 100%,
         30% 100%, 30% 50%, 0% 50%
     );
-    background-color: rgb(255, 255, 164);
+    background-color: var(--color00);
     font-size: 30px;
     display: flex;
     justify-content: flex-end;
@@ -745,28 +737,28 @@
 #a {
     width: 33.75px;
     height: 37.5px;
-    background-color: rgb(243, 243, 135);
+    background-color: var(--color00);
     border-radius: 5.25px;
 }
 
 #s {
     width: 33.75px;
     height: 37.5px;
-    background-color: rgb(243, 243, 135);
+    background-color: var(--color00);
     border-radius: 5.25px;
 }
 
 #d {
     width: 33.75px;
     height: 37.5px;
-    background-color: rgb(243, 243, 135);
+    background-color: var(--color00);
     border-radius: 5.25px;
 }
 
 #f {
     width: 33.75px;
     height: 37.5px;
-    background-color: pink;
+    background-color: var(--color02);
     border-radius: 5.25px;
 }
 
@@ -783,7 +775,7 @@
 #j {
     width: 33.75px;
     height: 37.5px;
-    background-color: pink;
+    background-color: var(--color02);
     border-radius: 5.25px;
 }
 
@@ -893,7 +885,7 @@
 #space {
     width: 264.75px;
     height: 37.5px;
-    background-color: rgb(243, 243, 151);
+    background-color: var(--color00);
 }
 
 #alt-dir {

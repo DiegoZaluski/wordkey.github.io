@@ -9,7 +9,7 @@ const teclas = document.querySelectorAll(".tecla");
 const trilho = document.getElementById("trilho");
 const body = document.querySelector('body');
 let section = document.querySelector('section');
-let coteudos = document.getElementById('coteudos');
+let conteudos = document.getElementById('conteudos');
 let key = document.getElementById('key');
 let randomwords = document.getElementById('palavras_aleatorias');
 let opcao = document.getElementById("opcao");
@@ -38,7 +38,7 @@ function saved_theme() {
     section,
     key,
     opcao,
-    coteudos,
+    conteudos,
     op1,
     op2,
     op3,
@@ -62,7 +62,7 @@ function saved_theme() {
     section,
     key,
     opcao,
-    coteudos,
+    conteudos,
     op1,
     op2,
     op3,
@@ -89,7 +89,7 @@ trilho.addEventListener('click', () => {
     b.classList.toggle('dark');
   }
 
-  coteudos.classList.toggle('dark');
+  conteudos.classList.toggle('dark');
   op1.classList.toggle('dark');
   op2.classList.toggle('dark');
   op3.classList.toggle('dark');
@@ -380,7 +380,6 @@ const btn0 = document.getElementById('tecla0');
 const btnMenos = document.getElementById('menos');
 const btnIgual = document.getElementById('igual');
 const btnBackspace = document.getElementById('backspace');
-
 const btnTab = document.getElementById('tab');
 const btnQ = document.getElementById('q');
 const btnW = document.getElementById('w');
@@ -791,3 +790,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+window.addEventListener('keydown', function(event) {
+  // Verifica se a tecla pressionada foi TAB
+  if (event.key === 'Tab' ) {
+    event.preventDefault(); // Só bloqueia o TAB
+    console.log('TAB foi para o limbo.');
+  }
+});

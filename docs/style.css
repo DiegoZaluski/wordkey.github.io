@@ -1,10 +1,11 @@
 /* Corpo da página */
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body.dark {
@@ -16,9 +17,10 @@ body {
     padding: 0%;
     width: 100%;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #3d405b;
     transition: .5s;
@@ -92,9 +94,6 @@ header {
     padding: 15px;
     border-radius: 10px;
     color: white;
-    place-items: center;
-    justify-self: center; 
-    align-self: center;    
     place-self: center;
 
 
@@ -136,12 +135,19 @@ header {
     top: 5px;
     left: 2px;
 }
-
-nav {
+nav{
+    left: 44vw;
+    top: 21.4vh;
+    position: relative;
+    overflow: hidden;
+    height: 700px;
+    width: 190px;
+}
+#opcao {
     background-color: #a9b3ce;
     position: absolute;
-    top: 26.2vh;
-    left: 91vw;
+    top: 11.3%;
+    left: 20.5%;
     width: 150px;
     height: 250px;
     display: grid;
@@ -174,10 +180,9 @@ nav {
     color: #000000;
 }
 
-#coteudos {
+#conteudos {
     position: absolute;
-    left: 88.95vw;
-    top: 21.4vh;
+    top:5%;
     font-family: initial;
     font-size: 30px;
     color: #ffffff;
@@ -187,28 +192,27 @@ nav {
     border-radius: 0px 10px;
     padding: 5px;
     box-shadow: -10px -10px 0px;
-}
+}/*medida aqui*/
 
 
-#coteudos.dark {
+#conteudos.dark {
     background-color: #8f9ece;
 }
 
 /* opção de keys bords */
 #optionkey {
     position: absolute;
-    left: 91.02vw;
-    top: 53.1vh;;
+    top: 47.3%;
+    left: 20.9%;
     text-align: center;
     font-family: initial;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     background-color: #a9b3ce;
     width: 150px;
+    height: 35px;
     cursor: pointer;
-    margin-top:1px;
-   
-    
+    padding-top: 5px;
 }
 #optionkey:hover{
     background-color: #abbcea;
@@ -377,6 +381,7 @@ a#github:hover{
 @media (max-width: 1904px) {
     body {
         padding: 20px;
+        
     }
 
 
@@ -385,103 +390,60 @@ a#github:hover{
         left: 0.2vw;
         transform: scale(0.75);
     }
+    nav{
+        height: 650px;
+    }
+    #opcao{
+        width: calc((1904/1920)*150px);
+        height: calc((1032/1080)*250px);
+    }
+    #conteudos{
+        width: 188.41px;
+        top: 4.5%;
 
-#optionkey{
-    top:52vh;
-    left: 91.05vw;
+        
+        
+    }
+    #optionkey{
+        width:calc((1904/1920)*150px);
+        height: 33px;
+        top: 48.3%;
+        left: 21%;
+    }
+
 }
-
-}
-
-
-@media (max-width: 1800px) {
-    body {
-        padding: 20px;
-    }
-
-    header {
-        width: 310px;
-        transform: scale(0.75);
-    }
-   #coteudos{ 
-        left: 88.8vw;
-        top: 21.4vh;
-    }
-   #optionkey {
-        top:52.03vh;
-    }
-    
-}
-
 
 @media (max-width: 1664px) {
     body {
         padding: 20px;
     }
-
-
     header {
         transform: scale(0.75);
     }
-
-    nav {
-    top: 26.2vh;
-    left: 90vw;
- 
+    nav{
+        height: 640px;
+        width: 165px;
     }
+    #opcao{
+        width: calc((1664/1920)*150px);
+        height: calc((945/1050)*250px);
 
+
+    }
     #optionkey {
-    left: 90.1vw;
-    top:52.8vh;
-    
-    
-
-    }
-
-    #coteudos {
-    left: 87.7vw;
-    top:21.5vh
-
-    }
-
-}
-
-/* Para telas com largura máxima de 1600px */
-@media (max-width: 1600px) {
-    body {
-        padding: 15px;
-    }
-
-    header {
-        top: 0.7vh;
-        left: 0.3vw;
-        transform: scale(0.8);
-    }
-
-    nav {
-    top: 27.2vh;
-    left: 89vw;
-    }
-
-    #optionkey {
-    left: 89.1vw;
-    top:58.7vh;
+        width: calc((1664/1920)*150px);
+        height: calc((955/945)*35px );
+        top: 46.8%;
+       
       
     }
-
-    #coteudos {
-        left: 86.55vw;
-
-    }
-
-
-    a#github {
-        top: 720px;
+    #conteudos{
+        width:calc((1664/1920)*190px);
     }
 }
 
 /* Para telas com largura máxima de 1424px e altura máxima de 805px */
-@media (max-width: 1440px) and (max-height: 805px) {
+@media (max-width: 1440px){
 
     #keybord {
         width: 35px;
@@ -513,15 +475,32 @@ a#github:hover{
         left: -48px;
     }
 
-    #coteudos {
-    left: 85.5vw;
+    #conteudos {
+    font-size: 22.7px;      
+    width: 143.7px;         
+    border-radius: 0px 7.5px;
+    padding: 3.8px;
+    box-shadow: -7.56px -7.56px 0px;
+    left: 0.5%;
    
     }
     nav{
-        left: 88.26vw;
+        height: 575px;
+        width: 149px;
+    }
+    #opcao{
+        width: 113px;           
+        height: 189px;          
+        border-radius: 23px;    
+        margin: 0.075vh;
+        top: 10.4%;
     }
     #optionkey{
-        left: 88.31vw;
+        font-size: 11.3px;      
+        width: 113px;           
+        height: 26.5px;         
+        padding-top: 3.78px;
+        top: 43.55%;
     }
 
     .custom-option{
