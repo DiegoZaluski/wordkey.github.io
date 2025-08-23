@@ -1,7 +1,7 @@
 # WordKey - Praticando Digitação
 
 ## Sobre o Projeto
-WordKey é um projeto de site interativo desenvolvido com o objetivo de aprimorar minhas habilidades em desenvolvimento web front-end, utilizando tecnologias básicas como HTML, CSS e JavaScript puro (Vanilla JS). Este projeto foi criado como uma ferramenta de aprendizado e prática de digitação.
+WordKey foi meu primeiro projeto web, feito de forma criativa sabendo apenas o básico de JavaScript, HTML e CSS na época. Se parar para ler o código, vai perceber que é praticamente uma grande gambiarra, mas mesmo assim é um projeto de que gosto muito, pois eu mesmo costumo usá-lo bastante para relembrar comandos básicos de Js e Python e treinar digitação. Ainda pretendo refatorá-lo para aprender ainda mais. Fique à vontade para lê-lo, só não se assuste com o quão feio ele é por dentro! 🫡😁
 
 ## 🎯 Objetivo
 O principal objetivo deste projeto foi consolidar meus conhecimentos em:
